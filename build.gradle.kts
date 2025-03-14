@@ -33,8 +33,8 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // https://mvnrepository.com/artifact/io.awspring.cloud/spring-cloud-aws-starter-s3
-//    implementation("io.awspring.cloud:spring-cloud-aws-starter-s3:3.3.0")
-//    implementation(kotlin("stdlib-jdk8"))
+    implementation("io.awspring.cloud:spring-cloud-aws-starter-s3:3.3.0")
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.withType<Test> {
