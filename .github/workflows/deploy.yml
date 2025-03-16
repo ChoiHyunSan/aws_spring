@@ -81,7 +81,7 @@ jobs:
           working-directory: /
           comment: Deploy
           command: |
-            docker pull ghcr.io/chsan626/app20250314:latest
+            docker pull ghcr.io/choihyunsan/app20250314:latest
             docker stop app1 2>/dev/null
             docker rm app1 2>/dev/null
             docker run -d --name app1 -p 8080:8080 ghcr.io/choihyunsan/app20250314::latest
