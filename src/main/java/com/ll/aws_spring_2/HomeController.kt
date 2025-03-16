@@ -13,7 +13,7 @@ class HomeController(
 ) {
     @GetMapping("/")
     fun main(): String {
-        return "Secret Value : $secretValue ";
+        return "[Secret Value : $secretValue ]";
     }
 
     @GetMapping("/buckets")
