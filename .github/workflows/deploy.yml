@@ -84,5 +84,5 @@ jobs:
             docker pull ghcr.io/choihyunsan/app20250314:latest
             docker stop app1 2>/dev/null
             docker rm app1 2>/dev/null
-            docker run -d --name app1 -p 8080:8080 ghcr.io/choihyunsan/app20250314::latest
+            docker run -d --name app1 -p 8080:8080 ghcr.io/choihyunsan/app20250314:latest
             docker rmi $(docker images -f "dangling=true" -q)
